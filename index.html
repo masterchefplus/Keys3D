@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Language" content="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        
+        <link rel="shortcut icon" href="/favicon.ico">
+        
+        <title>Keys3D</title>
+
+        <link rel="stylesheet" href="assets/css/c3t.style.css" />
+        <link rel="stylesheet" href="assets/css/animate.min.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/roundedCorners.css" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+        
+        <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body style="background-color: #000;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="45px" height="45px" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                    
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html"><i class="fas fa-tachometer-alt text-danger"></i> Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="staking.html"><i class="fas fa-coins text-danger"></i> Staking</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="keys.html"><i class="fas fa-key text-danger"></i> Keys</a></li>
+                </ul>
+                
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#" data-toggle="modal" data-target="#faqModal"><i class="fas fa-question-circle text-danger"></i> FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="https://tronscan.org/#/contract/TL58XTSjf31gem95G12gY4nQiAbBQM7qgW/code"><i class="fas fa-file-contract text-danger"></i> Contract</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="https://tronscan.org/#/token/1002927"><i class="fas fa-search-dollar text-danger"></i> TronScan</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="https://poloniex.org/exchange?id=366"><i class="fas fa-dollar-sign text-danger"></i> Buy ATRC</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="jumbotron text-white rcAll" style="background: rgba(0, 0, 0, 0.65);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col text-left">
+                                    <h1 class="text-white">Keys<span class="text-danger">3D</span></h1>
+                                    <small class="text-white">Will you unlock the ultimate prize?</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card-body text-white rcAll" style="background: rgba(0, 0, 0, 0.65);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h3 class="text-white">Game Funds</h3>
+                                    <div class="num-group">
+                                        <span class="bg-dark text-danger rcAll" id="num6">&nbsp;</span>
+                                        <span class="bg-dark text-danger rcAll" id="num5">&nbsp;</span>
+                                        <span class="bg-dark text-danger rcAll" id="num4">&nbsp;</span>
+                                        <span class="bg-dark text-danger rcAll" id="num3">&nbsp;</span>
+                                        <span class="bg-dark text-danger rcAll" id="num2">&nbsp;</span>
+                                        <span class="bg-dark text-danger rcAll" id="num1">&nbsp;</span>
+                                        <span class="bg-dark text-danger rcAll" id="num0">&nbsp;</span>
+                                    </div>
+                                    <small class="text-white">TRX held in the Game Contract</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <a class="btn btn-block btn-danger text-white rcAll">View on TronScan</a>
+                    
+                </div>
+            </div>
+            <br />
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card border-white rcAll" style="background: rgba(0, 0, 0, 0);">
+                        <div class="card-header text-white rcTop" style="background: rgba(0, 0, 0, 0.65);">Investor Level</div>
+                        <div class="card-body text-white" style="background: rgba(0, 0, 0, 0.65);">
+                            <div class="container">
+                                <div class="row privateData">
+                                    <div class="col text-center">
+                                        <h3 class="text-white text-center">Lv. <span class="upgrades"></span> (+<span class="upgrades"></span>% / month) <a href="#" data-toggle="modal" data-target="#upgradeModal"><i class="fas fa-question-circle text-danger"></i></a></h3>
+                                    </div>
+                                </div>
+                            
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <p>Your Investor Level adds a bonus to your Earn Rate of income from Keys - you can upgrade it up to +5% with ATRC Token - soon to be available on Poloniex!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-white rcBottom" style="background: rgba(0, 0, 0, 0.65);">
+                            <div class="container">
+                                <div class="row">
+                                    <span class="btn btn-block btn-danger btn-sm upgrade rcAll" style="cursor:pointer">Upgrade Level</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card border-white rcAll" style="background: rgba(0, 0, 0, 0);">
+                        <div class="card-header text-white rcTop" style="background: rgba(0, 0, 0, 0.65);">Your Earnings</div>
+                        <div class="card-body text-white" style="background: rgba(0, 0, 0, 0.65);">
+                            <div class="container">
+                                <div class="row">
+                                    <p class="text-center">
+                                        To begin earning, you&apos;ll need to buy Keys, stake Arcadium TRC, and refer new users to the game. All income, except from Keys, is withdrawn automatically. To collect your earnings from your Keys, click the button below.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-white rcBottom" style="background: rgba(0, 0, 0, 0.65);">
+                            <div class="container">
+                                <div class="row">
+                                    <span class="btn btn-block btn-danger btn-sm rcAll" style="cursor:pointer" id="getProfit">Get profit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card border-danger rcAll" style="background: rgba(0, 0, 0, 0);">
+                        <div class="card-header text-white rcTop" style="background: rgba(0, 0, 0, 0.65);">Keys3D Grand Prize</div>
+                        <div class="card-body text-white" style="background: rgba(0, 0, 0, 0.65);">
+                            <div class="row">
+                                <div class="text-center">
+                                    When you purchase Keys, you get a chance to win the Grand Prize - a portion of the game&apos;s operating funds, as TRX!<br />
+                                    <br />
+                                    To win, you need to be the last buyer of keys for at least 2400 blocks (2 hours), after which you need to click <b>Collect Prize</b>.
+                                </div>
+                  
+                                
+                            </div>
+                        </div>
+                        <div class="card-footer text-white rcBottom" style="background: rgba(0, 0, 0, 0.65);">
+                            <div class="container">
+                                <div class="row">
+                                    <span class="btn btn-block btn-danger btn-sm getPrizeFund" style="cursor:pointer">Get prize fund</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    
+                    
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card border-danger rcAll" style="background: rgba(0, 0, 0, 0);">
+                        <div class="card-header text-white rcTop" style="background: rgba(0, 0, 0, 0.65);">Referrals Program</div>
+                        <div class="card-body text-white" style="background: rgba(0, 0, 0, 0.65);">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <div class="gameWait text-warning">
+                                        <small>Start referring people, ready for the start of Game!</small>
+                                    </div>
+                
+                                    <p class="text-center">Refer people to Game, and receive 5% of their buy-ins!</p>
+                                    <div class="text-danger noref">You need to register or buy at least one medicine to invite referrals</div>
+                                    <div class="btn btn-danger register noref" style="cursor:pointer">REGISTER</div>
+                                    <input class="withref form-control rcAll" id="node" readonly style="display:none" onclick="this.select()">
+                                </div>
+                
+                                
+                
+                            </div>
+                        </div>
+                        <div class="card-footer text-white rcBottom" style="background: rgba(0, 0, 0, 0.65);">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="btn btn-block btn-danger btn-sm rcAll withref showRefs">My referrals</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        
+        <!-- Bottom Navbar -->
+        <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item"><a class="gameWait nav-link" href="#">Game Starts In: </a></li>
+                    <li class="nav-item"><a class="gameRun nav-link text-danger" href="#">Game Lifetime: <span class="gameStartIn mono text-white" style="z-index:1;">-- --:--:--</span></a></li>
+                    <li class="nav-item"><a class="gameRun nav-link text-danger" href="#">Game Members: <span class="mono totalInvestors text-white">---</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Modals -->
+        <div class="modal fade" id="faqModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content border-danger rcAll">
+                    <div class="modal-header bg-primary rcTop">
+                        <h5 class="modal-title text-white" id="exampleModalLabel">FAQs</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body bg-primary text-white">
+                        <h3 class="text-white">Is it safe to invest?</h3>
+                        <p class="text-justify">
+                            Keys3D is a game run on a Smart Contract, deployed on the Tron Network. Keys3D bears a mark possibility of one or more players being able to earn TRX, based on income to the game&apos;s Smart Contract.<br />
+                            <br />
+                            All actions of each player are visible to everyone globally, via <a href="https://tronscan.org" target="_blank" class="text-danger">TronScan.org</a>, and the Smart Contract source is verified, also - meaning anyone can audit the Smart Contract at any time. The Contract is immutable, so not even the creators can change the logic of the contract.
+                        </p>
+                        <br /><hr /><br />
+                        
+                        <h3 class="text-white">How do I interact with the game?</h3>
+                        <p class="text-justify">
+                            Since Keys3D is deployed on the TRON Network, you&apos;ll need a Dapp Wallet browser, or browser extension which is compatible with this chain. Such browsers, apps or extensions which allow full and proper use of the Keys3D game are freely available online - Arcadium Network recommends <a href="https://tronwallet.me" target="_blank" class="text-danger">TronWallet</a> for Android and iOS Users, and TronLink for Google Chrome and Firefox users.
+                        </p>
+                        <br /><hr /><br />
+                        
+                        <h3 class="text-white">How do I start making money?</h3>
+                        <p class="text-justify">
+                            In this game, you can make a profit in three ways: by buying Keys, attracting referrals and staking ATRC tokens to receive daily dividends. To increase the income from Keys, you can upgrade your Player Level.
+                        </p>
+                        <br /><hr /><br />
+                        
+                        <h3 class="text-white">How is income accrued?</h3>
+                        <p class="text-justify">
+                            Income is accrued every 3 seconds and is immediately available for withdrawal to your wallet.
+                        </p>
+                        <br /><hr /><br />
+                
+                        <h3 class="text-white">How do I get Dividends?</h3>
+                        <p class="text-justify">
+                            Dividends will be paid automatically EVERY DAY - there is a timer available on the Dashboard which will indicate when payouts will occur.
+                        </p>
+                        <br /><hr /><br />
+                        
+                        <h3 class="text-white">Still have Questions?</h3>
+                        <p class="text-justify">
+                            If you have any questions, please feel free to join the Arcadium Network Discord server - there is an invite link on the Dashboard. One of the developers, or our participants will be happy to assist!
+                        </p>
+                        <br /><hr /><br />
+                
+                        <div class="text-center text-danger" style="font-size:12px">
+                            Please remember, this is a <b>GAME</b> - as such, there is <i>NO GUARANTEE</i> that you will profit from playing this game or activating its functions. Please only invest funds you can afford to lose - The developers and participants of Keys3D will not be held responsible for your loss of funds.
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-primary text-white rcBottom">
+                        <button type="button" class="btn btn-block btn-danger rcAll" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="upgradeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content border-danger rcAll">
+                    <div class="modal-header bg-primary rcTop">
+                        <h5 class="modal-title text-white" id="exampleModalLabel">Upgrade Investor Level</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body bg-primary text-white">
+                        <p class="text-justify">
+                            To increase the income from Keys, you can upgrade your Investor Level. Each upgrade level adds 1 percent to the profit of each Key. When upgrading, all accrued profits are automatically transferred to the wallet at the current percentage, after which the percentage increases. In total, 5 upgraded Investor Levels are available.
+                        </p>
+                
+                        <div class="card">
+                            <div class="card-body text-center bg-primary text-white">
+                                <div>
+                                    My level: <span class="upgrades"></span> (+<span class="upgrades"></span>% / month)
+                                </div>
+                                <div>
+                                    <span class="btn btn-danger btn-sm rcAll upgrade" style="cursor:pointer">Upgrade</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-primary text-white rcBottom">
+                        <button type="button" class="btn btn-block btn-danger rcAll" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="refsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content border-danger rcAll">
+                    <div class="modal-header bg-primary text-white rcTop">
+                        <h5 class="modal-title text-white" id="exampleModalLabel">My referrals</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body bg-primary text-white">
+                        <div class="float-left text-info">Address</div>
+                        <div class="float-right text-info">My profit</div>
+                        <div class="clearfix"></div>
+                        <div id="myrefs"></div>
+                    </div>
+                    <div class="modal-footer bg-primary text-white rcBottom">
+                        <button type="button" class="btn btn-block btn-danger rcAll" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="tronlinkModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content border-danger rcAll">
+                    <div class="modal-header bg-primary text-white rcTop">
+                        <h5 class="modal-title" id="exampleModalLabel">Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body bg-primary text-white">
+                        <div id="tronlinkModalContent"></div>
+                    </div>
+                    <div class="modal-footer bg-primary text-white rcBottom">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/ramda.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/tronweb.js"></script>
+        <script src="assets/lib/abi.js"></script>
+        <script src="assets/lib/infekt.trx.js"></script>
+    </body>
+</html>
