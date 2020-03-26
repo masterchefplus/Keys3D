@@ -21,7 +21,7 @@ var gameStartIn = 0;
 var prevGameStartIn;
 var totalInvested = 0;
 var totalFrozenAmount = 0;
-var contractAddress = 'TL58XTSjf31gem95G12gY4nQiAbBQM7qgW';
+var contractAddress = 'TUX8V8YwpAVk8BHcXeVLgHGb2DC7UQxfEU';
 var totalPaid = 17000013;
 var divsCounter = 5812;
 var tronWebExternal = new TronWeb({
@@ -74,7 +74,7 @@ window.setInterval(function() {
     
     prevGameStartIn = blockNumber;
     
-    var diff = (blockNumber - 18155224) * 3 >> 0;
+    var diff = (blockNumber - 18318500) * 3 >> 0;
     if (diff > 0) {
       $('.gameRun').show();
       $('.gameWait').hide();
@@ -219,7 +219,7 @@ window.setInterval(function() {
     
     tronWeb.trx.getUnconfirmedAccount(myAddress)
       .then(function(res) {
-        var xio10Asset = res.assetV2 && R.find(R.propEq('key', '1002927'))(res.assetV2);
+        var xio10Asset = res.assetV2 && R.find(R.propEq('key', '1002937'))(res.assetV2);
         $('.tokenAmount').html(xio10Asset && (xio10Asset.value / 1000000).toFixed(2) || '0.00');
       });
   } else {
@@ -246,7 +246,7 @@ $('.buyBuilding').click(function() {
   
   var contract = window.tronWeb.contract(abi, contractAddress);
   
-  contract.buy('TL58XTSjf31gem95G12gY4nQiAbBQM7qgW').send({
+  contract.buy('TUX8V8YwpAVk8BHcXeVLgHGb2DC7UQxfEU').send({
     shouldPollResponse: false,
     callValue: $(this).data('buy') * 1000000,
     feeLimit: FEE_LIMIT
@@ -296,10 +296,10 @@ $('.upgrade').click(function() {
   if (nextUpgradePrice) {
     var contract = window.tronWeb.contract(abi, contractAddress);
     
-    contract.upgrade('TL58XTSjf31gem95G12gY4nQiAbBQM7qgW').send({
+    contract.upgrade('TUX8V8YwpAVk8BHcXeVLgHGb2DC7UQxfEU').send({
       shouldPollResponse: false,
       tokenValue: nextUpgradePrice * 1000000,
-      tokenId: 1002927,
+      tokenId: 1002937,
       feeLimit: FEE_LIMIT
     })
       .then(function() {
@@ -362,7 +362,7 @@ $('.register').click(function() {
   
   var contract = window.tronWeb.contract(abi, contractAddress);
   
-  contract.register('TL58XTSjf31gem95G12gY4nQiAbBQM7qgW').send({
+  contract.register('TUX8V8YwpAVk8BHcXeVLgHGb2DC7UQxfEU').send({
     shouldPollResponse: false,
     callValue: 0,
     feeLimit: FEE_LIMIT
@@ -390,10 +390,10 @@ $('#freeze').click(function() {
   
   var contract = window.tronWeb.contract(abi, contractAddress);
   
-  contract.freeze('TL58XTSjf31gem95G12gY4nQiAbBQM7qgW').send({
+  contract.freeze('TUX8V8YwpAVk8BHcXeVLgHGb2DC7UQxfEU').send({
     shouldPollResponse: false,
     tokenValue: ($('#freezeAmount').val() * 1000000).toFixed(0),
-    tokenId: 1002927,
+    tokenId: 1002937,
     feeLimit: FEE_LIMIT
   })
     .then(function() {
