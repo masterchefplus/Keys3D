@@ -21,7 +21,7 @@ var gameStartIn = 0;
 var prevGameStartIn;
 var totalInvested = 0;
 var totalFrozenAmount = 0;
-var contractAddress = 'TUX8V8YwpAVk8BHcXeVLgHGb2DC7UQxfEU';
+var contractAddress = 'TSTE59sGg7D9cqFtrHCSEiFCE9X1ZMBVyn';
 var totalPaid = 17000013;
 var divsCounter = 5812;
 var tronWebExternal = new TronWeb({
@@ -246,7 +246,7 @@ $('.buyBuilding').click(function() {
   
   var contract = window.tronWeb.contract(abi, contractAddress);
   
-  contract.buy('TUX8V8YwpAVk8BHcXeVLgHGb2DC7UQxfEU').send({
+  contract.buy('TSTE59sGg7D9cqFtrHCSEiFCE9X1ZMBVyn').send({
     shouldPollResponse: false,
     callValue: $(this).data('buy') * 1000000,
     feeLimit: FEE_LIMIT
@@ -296,7 +296,7 @@ $('.upgrade').click(function() {
   if (nextUpgradePrice) {
     var contract = window.tronWeb.contract(abi, contractAddress);
     
-    contract.upgrade('TUX8V8YwpAVk8BHcXeVLgHGb2DC7UQxfEU').send({
+    contract.upgrade('TSTE59sGg7D9cqFtrHCSEiFCE9X1ZMBVyn').send({
       shouldPollResponse: false,
       tokenValue: nextUpgradePrice * 1000000,
       tokenId: 1002937,
@@ -362,7 +362,7 @@ $('.register').click(function() {
   
   var contract = window.tronWeb.contract(abi, contractAddress);
   
-  contract.register('TUX8V8YwpAVk8BHcXeVLgHGb2DC7UQxfEU').send({
+  contract.register('TSTE59sGg7D9cqFtrHCSEiFCE9X1ZMBVyn').send({
     shouldPollResponse: false,
     callValue: 0,
     feeLimit: FEE_LIMIT
@@ -390,7 +390,7 @@ $('#freeze').click(function() {
   
   var contract = window.tronWeb.contract(abi, contractAddress);
   
-  contract.freeze('TUX8V8YwpAVk8BHcXeVLgHGb2DC7UQxfEU').send({
+  contract.freeze('TSTE59sGg7D9cqFtrHCSEiFCE9X1ZMBVyn').send({
     shouldPollResponse: false,
     tokenValue: ($('#freezeAmount').val() * 1000000).toFixed(0),
     tokenId: 1002937,
