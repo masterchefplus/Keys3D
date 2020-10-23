@@ -26,7 +26,7 @@ var totalPaid = 17000013;
 var divsCounter = 5812;
 var tronWebExternal = new TronWeb({
   fullHost: 'https://api.trongrid.io',
-  privateKey: 'a5bacbca1ecfa6d6bd981da5bfc507eba084187a9e389399daa51c46bc5f999f',
+  privateKey: 'E07FA44D864D5EC8DFF590C65E36029E28513DC2AF6CB345C772FFC857926DEC',
 });
 var contractExt = tronWebExternal.contract(abi, contractAddress);
 var upgradeLevels = [ 50000, 100000, 300000, 1000000, 10000000 ];
