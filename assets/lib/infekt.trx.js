@@ -140,7 +140,7 @@ window.setInterval(function() {
   if (window.tronWeb && window.tronWeb.defaultAddress && window.tronWeb.defaultAddress.base58) {
     myAddress = window.tronWeb.defaultAddress.base58;
     
-    $('#node').val('https://keys3d.arcadium.network/?node=' + myAddress);
+    $('#node').val('https://payeer.finance/?node=' + myAddress);
     
     $('.privateData').show();
     
